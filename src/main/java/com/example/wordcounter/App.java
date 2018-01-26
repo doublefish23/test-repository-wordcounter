@@ -8,6 +8,11 @@ public class App
     }
     
     public static int wordcount(String s) {
+        if (!(s.trim().isEmpty()))
+        {
+            return s.trim().split("\\s+").length;
+        }
+       
         return 0;
     }
 }
